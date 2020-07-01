@@ -52,7 +52,7 @@ class MovieZoneState extends State<MovieZone> {
   Future<String> getJsonData() async {
     res = await http.get(
         Uri.encodeFull(
-            "http://omdbapi.com/?apikey=<your_key>&t=${movieController.text}"),
+            "http://omdbapi.com/?apikey=<your_API_key>&t=${movieController.text}"),
         headers: {"Accept": "application/json"});
 
     setState(() {
